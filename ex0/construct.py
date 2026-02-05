@@ -1,19 +1,8 @@
 import sys
 import os
 import site
-# print(os.getenv("SECRET_KEY", "default_secret_key"))
 
-# print(os.environ["DEBUG"])
-
-# os.environ["X"] = "1"
-# # affects only this process + children
-# print(os.environ["X"])
-
-# print(sys.prefix)
-# print(sys.base_prefix)
 status = sys.prefix != sys.base_prefix
-
-
 if status:
     print("MATRIX STATUS: Welcome to the construct")
     print("Current Python:", sys.executable)    
