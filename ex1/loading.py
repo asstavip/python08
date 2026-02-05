@@ -12,10 +12,14 @@ except ImportError as e:
         " pip install -r requirement.txt"
           )
 else:
-    packages = [pandas,requests,matplotlib]
+    packages = [pd,req,matplotlib]
     for pack in packages:
         print(f"[OK] {pack.__name__} {pack.__version__} - Data manipulation ready")
 
 data = {
-    
+    "time": range(1,11),
+    "value": range(101,111)
 }
+df = pd.DataFrame(data)
+
+print(df)
